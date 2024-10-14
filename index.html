@@ -253,27 +253,26 @@
         <p class="section-subtitle">¿Necesitas más información?</p>
         <h6 class="section-title mb-5">Contáctanos</h6>
         <!-- contact form -->
-        <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+        <form action="https://formspree.io/f/xovqqwpr" method="POST" class="contact-form col-md-10 col-lg-8 m-auto">
             <div class="form-row">
                 <div class="form-group col-sm-6">
-                    <input type="text" size="50" class="form-control" placeholder="Nombre" required>                 
+                    <input type="text" name="nombre" size="50" class="form-control" placeholder="Nombre" required>                 
                 </div>
                 <div class="form-group col-sm-6">
-                    <input type="email" class="form-control" placeholder="Email" required>                 
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>                 
                 </div>
-                <!-- Campo desplegable con opciones -->
                 <div class="form-group col-sm-12">
                     <label for="opciones">Seleccione una opción:</label>
-                    <select class="form-control" id="opciones" required>
+                    <select class="form-control" id="opciones" name="opcion" required>
                         <option value="" disabled selected>Elige una opción</option>
-                        <option value="consulta">Legalización</option>
-                        <option value="soporte">Traducción</option>
-                        <option value="informacion">Asesoria</option>
-                        <option value="otro">Consultoria</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="soporte">Soporte Técnico</option>
+                        <option value="informacion">Más Información</option>
+                        <option value="otro">Otro</option>
                     </select>
                 </div>
                 <div class="form-group col-sm-12">
-                    <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Mensaje"></textarea>
+                    <textarea name="mensaje" id="comment" rows="6" class="form-control" placeholder="Mensaje"></textarea>
                 </div>
                 <div class="form-group col-sm-12 mt-3">
                     <input type="submit" value="Enviar" class="btn btn-outline-primary rounded">                  
@@ -282,6 +281,7 @@
         </form><!-- end of contact form -->
     </div><!-- end of container -->
 </section><!-- end of contact section -->
+
 
 
     <!-- footer -->
